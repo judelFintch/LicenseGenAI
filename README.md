@@ -1,49 +1,48 @@
-LicenseGenAI
+LicenseGen
 
-LicenseGen is a streamlined application designed to generate import licenses as PDF documents based on the information extracted from provided invoices. It leverages AI technology to ensure accuracy and efficiency, helping businesses quickly produce official, professional-grade documentation.
+LicenseGen is a PHP application designed to create professional PDF import licenses based on data extracted from invoices. It combines intelligent data handling with a flexible template-based approach to streamline the license generation process.
 Features
 
-    Automated Data Extraction:
-    Integrates with Mistral AI to intelligently read invoice details.
+    Invoice Data Parsing:
+    Reads and processes invoice details to populate license fields.
+
+    PDF Generation:
+    Outputs polished PDF files using PHP PDF libraries.
 
     Customizable Templates:
-    Allows you to define and use your own PDF templates.
+    Allows users to define and update templates for their licenses.
 
-    Reliable PDF Generation:
-    Outputs well-structured, high-quality PDF files with all the necessary information.
-
-    Efficient Processing:
-    Minimizes manual input, enabling fast, repeatable results.
+    Seamless Integration:
+    Can be integrated into existing systems or used as a standalone tool.
 
 Requirements
 
-    Python 3.8+
-    Dependencies:
-        Mistral AI SDK (for data processing and validation)
-        FPDF or similar Python PDF libraries for generating PDFs
+    PHP 8.0 or higher
+    Required PHP extensions:
+        mbstring
+        gd
+        dom
 
 Installation
 
-    Clone the repository:
-
-git clone https://github.com/yourusername/licensegen.git
+    Clone the repository:(https://github.com/judelFintch/LicenseGenAI.git)
 cd licensegen
 
-Install the required dependencies:
+Install dependencies using Composer:
 
-    pip install -r requirements.txt
+    composer install
 
-    Set up your configuration file with your template path and AI API credentials.
+    Set up your configuration file with template paths and any API credentials needed for data validation.
 
 Usage
 
-    Place your invoice files in the input/ directory.
-    Run the script:
+    Place your invoice files in the invoices/ directory.
+    Run the PHP script:
 
-    python generate_license.py
+    php generateLicense.php
 
-    The resulting PDFs will be stored in the output/ directory.
+    The resulting PDFs will be saved in the licenses/ directory.
 
 Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request for any bug fixes or enhancements.
+If you’d like to contribute, please submit a pull request or open an issue. Contributions are always welcome!

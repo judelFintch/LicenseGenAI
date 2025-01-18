@@ -123,4 +123,8 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    // Configuration for Hunggin Face API
+    'hungginface' => [
+        'HUNGGIN_FACE_API' => env('HUNGIN_FACE_API')
+    ],
 ];
